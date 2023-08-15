@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1>Password Generator</h1>
+        </div>
+
+        <div class="container">
+            <div id="input-ctn">
+                <form action="">
+                    <label for="password">Generated Password :</label>
+                    <input type="text" name="password" id="password" value="" disabled>
+                    <input type="button" value="CLEAR" id="clear">
+                </form>
+            </div>
+
+            <div id="ctn-msg">
+                <p class="msg"></p>
+            </div>
+
+            <div id="combination-ctn">
+                <form action="">
+                    <label for="number-characters">Number of Characters: </label>
+                    <input type="number" name="number-characters" id="number-characters" min="8" value="8" required>
+                    <br>
+                    <input type="checkbox" name="special-char" id="special-char">
+                    <label for="special-char">Special Characters</label>
+                    <br>
+                    <input type="checkbox" name="numbers" id="numbers">
+                    <label for="numbers">Numbers</label>
+                    <br>
+                    <input type="checkbox" name="lowercase-letters" id="lowercase-letters">
+                    <label for="lowercase-letters">Lowercase Letters</label>
+                    <br>
+                    <input type="checkbox" name="uppercase-letters" id="uppercase-letters">
+                    <label for="uppercase-letters">Uppercase Letters</label>
+
+                    <div class="btn-generate">
+                        <input type="button" value="GENERATE" id="generate">
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
