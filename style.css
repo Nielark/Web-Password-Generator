@@ -90,7 +90,6 @@ input[type="text"] {
 
 #password {
     font-size: 20px;
-    min-width: 100px;
 }
 
 #number-characters {
@@ -146,7 +145,7 @@ input[type="button"] {
 }
 
 @media  screen and (max-width: 555px) {
-    input[type="text"] {
+    #password {
         width: 100%;
     }
 
