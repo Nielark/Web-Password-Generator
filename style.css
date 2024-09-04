@@ -89,14 +89,14 @@ input[type="number"] {
                 inset 1px 3px 10px gray;
 }
 
-input[type="text"] {
+#password {
     font-size: 20px;
     min-width: 100px;
 }
 
-input[type="number"] {
+#number-characters {
     font-size: 20px;
-    width: 75px;
+    width: 50px;
 }
 
 input[type="checkbox"] {
