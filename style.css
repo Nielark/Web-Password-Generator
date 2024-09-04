@@ -10,19 +10,16 @@
     padding: 20px;
     max-width: 100%;
     min-width: 400px;
-    min-height: 100dvh;
+    min-height: 100vh;
 }
 
 .header {
-    margin: 0 auto;
     text-align: center;
     margin-bottom: 30px;
-    max-width: 800px;
 }
 
 .container {
     max-width: 800px;
-    min-height: 500px;
     position: relative;
     margin: 0 auto;
     padding: 20px;
@@ -35,15 +32,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
 }
 
-#input-ctn {
-    font-size: 25px;
+#ctn-input {
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
     padding: 10px;
+    margin-bottom: 40px;
 }
 
-#combination-ctn {
+#ctn-combination {
     padding: 15px;
     font-size: 20px;
 }
@@ -51,17 +53,17 @@
 #ctn-msg {
     position: absolute;
     display: none;
-    top: 20%;
+    top: 18%;
     padding: 3px;
 }
 
 .msg {
     color: red;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-.btn-generate {
+.ctn-button {
     margin-top: 20px;
     text-align: center;
 }
@@ -72,30 +74,29 @@ input {
     vertical-align: middle;
 }
 
-#combination-ctn label,
-#combination-ctn input {
+#ctn-combination label,
+#ctn-combination input {
     margin: 10px 5px;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="number"] {
     padding: 5px 10px;
-    font-size: 25px;
     outline: none;
     border: 2px inset;
     background-color: #BBDDF2;
     box-shadow: inset 3px 5px 4px gray,
                 inset 1px 3px 10px gray;
+}
+
+input[type="text"] {
+    font-size: 20px;
+    min-width: 100px;
 }
 
 input[type="number"] {
     font-size: 20px;
-    padding: 5px 10px;
     width: 75px;
-    outline: none;
-    border: 2px inset;
-    background-color: #BBDDF2;
-    box-shadow: inset 3px 5px 4px gray,
-                inset 1px 3px 10px gray;
 }
 
 input[type="checkbox"] {
@@ -121,7 +122,8 @@ input[type="button"] {
     background-color: transparent;
     font-size: 18px;
     font-weight: bold;
-    padding: 10px 15px;
+    width: 150px;
+    padding: 10px 0;
     outline: none;
     border: 2px outset;
     border-radius: 30px;
@@ -144,29 +146,16 @@ input[type="button"] {
     transition: 150ms;
 }
 
-@media  screen and (max-width: 768px) {
-    .container {
-        gap: 10px;
+@media  screen and (max-width: 555px) {
+    input[type="text"] {
+        width: 100%;
+    }
+
+    #ctn-input {
+        flex-direction: column;
     }
 
     #ctn-msg {
-        top: 32%;
-    }
-
-    #input-ctn {
-        text-align: center;
-    }
-
-    #input-ctn label,
-        input[type="text"] {
-        display: block;
-    }
-
-    input[type="text"] {
-        margin: 3px 0;
-    }
-
-    #input-ctn #clear {
-        margin: 10px 0;
+        top: 21%;
     }
 }
