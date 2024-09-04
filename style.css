@@ -79,8 +79,7 @@ input {
     margin: 10px 5px;
 }
 
-input[type="text"],
-input[type="number"] {
+input[type="text"] {
     padding: 5px 10px;
     outline: none;
     border: 2px inset;
